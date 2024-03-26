@@ -113,3 +113,12 @@ nav .nav-links li a:hover {
 .search-container button[type="submit"]:hover {
     background-color: #333;
 }
+
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    overflow: auto;
+    
+}
