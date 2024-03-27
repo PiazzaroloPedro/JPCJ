@@ -156,7 +156,7 @@ nav .nav-links li a:hover {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 2s;
 }
 
 .manual-btn:not(:last-child) {
