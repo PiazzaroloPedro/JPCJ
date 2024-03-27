@@ -135,11 +135,12 @@ nav .nav-links li a:hover {
 }
 
 .slide{
-    
+    transition: 2s;
     position: relative;
 }
 .slide img{
     width: 500px;
+    height: 750px;
 }
 
 .manual-navigation{
@@ -206,9 +207,13 @@ nav .nav-links li a:hover {
     margin-left: -900%;
 }
 
-#radio11:checked~.first {
+#radio10:checked~.first {
     margin-left: -1000%;
 }
+#radio11:checked~.first {
+    margin-left: -900%;
+}
+
 
 
 
