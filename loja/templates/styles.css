@@ -123,10 +123,11 @@ nav .nav-links li a:hover {
 
 /*  começo do carrosel fotos pagina home    */
 .slider{
-    margin: 0 auto;
+    
     width: 500px;
-    height: 10000px;
+    height: 600px;
     overflow: hidden;
+   
     
 }
 
@@ -134,6 +135,8 @@ nav .nav-links li a:hover {
     width: 500px;
     height: 750px;
     display: flex;
+  
+   
 }
 
 .slides input{
@@ -147,12 +150,15 @@ nav .nav-links li a:hover {
 .slide img{
     width: 500px;
     height: 750px;
+    display: flex; /* Permite centralizar horizontalmente e verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
 }
 
 .manual-navigation{
-    position: absolute;
+   
     width: 500px;
-    margin-top: 700px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
 }
@@ -224,31 +230,25 @@ nav .nav-links li a:hover {
 /*  fim do carrosel */
 
 /* Estilos para a seção de Novas Tendências */
-.trends {
-    margin-top: 20px;
+.trends, .fashion {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-start; /* Alinhar os itens ao topo */
+    margin-top: 50px;
 }
 
-.trends h2 {
+.season, .clothing {
     text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.season {
-    text-align: center;
-    width: 200px;
-    margin-bottom: 20px;
+    width: 200px; /* Largura das seções */
 }
 
 .season img {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: auto;
 }
 
-.season button {
+.season button, .clothing button {
+    margin-top: 10px;
     background-color: #333;
     color: #fff;
     border: none;
@@ -256,10 +256,9 @@ nav .nav-links li a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
 }
 
-.season button:hover {
+.season button:hover, .clothing button:hover {
     background-color: #000;
 }
 
