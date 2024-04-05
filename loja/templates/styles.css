@@ -52,7 +52,7 @@ nav .nav-links li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #175ca1;
+    background-color: #585d63;
     min-width: 200px;
     /* Largura do dropdown */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -67,13 +67,13 @@ nav .nav-links li a:hover {
 .dropdown-content .submenu .sub-content {
     display: none;
     position: absolute;
-    background-color: #0f1587;
+    background-color: #585d63;
     min-width: 160px;
     /* Largura do submenu */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left: 100%;
-    top: 0;
+    left: 0;
+    top: 100%;
 }
 
 .dropdown-content .submenu:hover .sub-content {
@@ -123,12 +123,11 @@ nav .nav-links li a:hover {
 
 /*  começo do carrosel fotos pagina home    */
 .slider{
-    
+    margin: 0 auto;
     width: 500px;
-    height: 600px;
+    height: 10000px;
     overflow: hidden;
    
-    
 }
 
 .slides{
@@ -150,15 +149,13 @@ nav .nav-links li a:hover {
 .slide img{
     width: 500px;
     height: 750px;
-    display: flex; /* Permite centralizar horizontalmente e verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; 
+    
 }
 
 .manual-navigation{
-   
+    position: absolute;
     width: 500px;
-    margin: 20px auto;
+    margin-top: 700px;
     display: flex;
     justify-content: center;
 }
@@ -230,25 +227,32 @@ nav .nav-links li a:hover {
 /*  fim do carrosel */
 
 /* Estilos para a seção de Novas Tendências */
-.trends, .fashion {
+.trends {
+    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start; /* Alinhar os itens ao topo */
-    margin-top: 50px;
 }
 
-.season, .clothing {
+.trends h2 {
     text-align: center;
-    width: 200px; /* Largura das seções */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.season {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
 .season img {
-    width: 150px;
     height: auto;
+    width: 150px;
+    height: 250px;
 }
 
-.season button, .clothing button {
-    margin-top: 10px;
+.season button {
     background-color: #333;
     color: #fff;
     border: none;
@@ -256,10 +260,11 @@ nav .nav-links li a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
-.season button:hover, .clothing button:hover {
-    background-color: #000;
+.season button:hover {
+    background-color: #585d63;
 }
 
 
