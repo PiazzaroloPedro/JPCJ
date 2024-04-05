@@ -125,14 +125,14 @@ nav .nav-links li a:hover {
 .slider{
     margin: 0 auto;
     width: 500px;
-    height: 750px;
+    height: 600px;
     overflow: hidden;
     
 }
 
 .slides{
     width: 500px;
-    height: 750px;
+    height: 500px;
     display: flex;
 }
 
@@ -146,7 +146,7 @@ nav .nav-links li a:hover {
 }
 .slide img{
     width: 500px;
-    height: 750px;
+    height: 500px;
 }
 
 .manual-navigation{
@@ -223,8 +223,44 @@ nav .nav-links li a:hover {
 
 /*  fim do carrosel */
 
+/* Estilos para a seção de Novas Tendências */
+.trends {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.trends h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
+.season {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
 
+.season img {
+    width: 150px;
+    height: auto;
+}
+
+.season button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.season button:hover {
+    background-color: #000;
+}
 
 
