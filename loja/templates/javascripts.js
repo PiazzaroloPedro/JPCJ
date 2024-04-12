@@ -1,34 +1,35 @@
-//começo do carrosel de fotos
-let count = 1;
-let intervalId;
-let intervalTime = 4000; // Intervalo de tempo padrão
+let currentIndex = 0; // Índice do slide atual
+const intervalTime = 3000; // Tempo de transição em milissegundos
+let intervalId; // ID do intervalo para poder limpar depois
 
-document.getElementById("radio1").checked = true;
+const slides = document.querySelectorAll('.slides img'); // Seleciona todas as imagens dentro de '.slides'
 
 function startCarousel() {
     intervalId = setInterval(nextImage, intervalTime);
 }
 
-// Inicia o carrossel quando a página carrega
-startCarousel();
-
 function nextImage() {
-    count++;
-    if (count > 11) {
-        count = 1;
-    }
-    document.querySelector('input[name="radio-btn"]:nth-of-type(' + count + ')').checked = true;
+    slides[currentIndex].style.display = 'none'; // Oculta o slide atual
+    currentIndex = (currentIndex + 1) % slides.length; // Move para o próximo slide, com looping
+    slides[currentIndex].style.display = 'block'; // Mostra o novo slide
 }
 
-// Event listener para os botões de rádio
-document.querySelectorAll('input[name="radio-btn"]').forEach(function (radio) {
-    radio.addEventListener('click', function () {
-        clearInterval(intervalId); // Limpa o intervalo atual
-        setTimeout(startCarousel, 4000); // Espera 4 segundos antes de reiniciar o carrossel
-    });
+// Mostra o primeiro slide e inicia o carrossel
+window.onload = () => {
+    slides[currentIndex].style.display = 'block';
+    startCarousel();
+};
+
+// Ligar o slider à posição das imagens
+const slider = document.getElementById('slider');
+
+slider.addEventListener('input', function() {
+    clearInterval(intervalId); // Para o carrossel automático
+    slides[currentIndex].style.display = 'none'; // Oculta o slide atual
+    currentIndex = parseInt(this.value) - 1;
+    slides[currentIndex].style.display = 'block'; // Mostra o slide correspondente ao slider
+    startCarousel(); // Reinicia o carrossel automático
 });
 
+
 //fim do carrosel de fotos
-
-
-        
