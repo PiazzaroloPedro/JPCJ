@@ -1,16 +1,10 @@
+/* Estilos gerais */
 body {
-    font-family: Cormorant SC;
+    font-family:Cormorant SC;
     margin: 0;
-    padding: 0;
+    padding: 0 10px; /* Ajuste conforme necessário para alinhamento */
     background-color: #f5f5f5;
-    
 }
-
-h2 {
-    text-align: center;
-    
-}
-
 
 header {
     background-color: #333;
@@ -22,8 +16,7 @@ header {
 
 .logo h1 {
     color: white;
-    margin-left: 20px;
-    /* Espaçamento da logo */
+    margin-left: 20px; /* Espaçamento da logo */
 }
 
 nav .nav-links {
@@ -52,10 +45,9 @@ nav .nav-links li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #585d63;
-    min-width: 200px;
-    /* Largura do dropdown */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #175ca1;
+    min-width: 200px; /* Largura do dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -67,13 +59,12 @@ nav .nav-links li a:hover {
 .dropdown-content .submenu .sub-content {
     display: none;
     position: absolute;
-    background-color: #585d63;
-    width: 100%;
-    /* Largura do submenu */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #0f1587;
+    min-width: 160px; /* Largura do submenu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    left: 0;
-    top: 100%;
+    left: 100%;
+    top: 0;
 }
 
 .dropdown-content .submenu:hover .sub-content {
@@ -121,150 +112,130 @@ nav .nav-links li a:hover {
     background-color: #333;
 }
 
-/*  começo do carrosel fotos pagina home    */
-.slider{
-    margin: 0 auto;
-    width: 500px;
-    height: 10000px;
-    overflow: hidden;
-   
-}
-
-.slides{
-    width: 500px;
-    height: 750px;
-    display: flex;
-  
-   
-}
-
-.slides input{
-   display: none; 
-}
-
-.slide{
-    transition: 2s;
+.carousel {
+>>>>>>> Stashed changes
     position: relative;
-}
-.slide img{
-    width: 500px;
-    height: 750px;
-    
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 500px;
-    margin-top: 700px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 2s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 15px;
-}
-
-.manual-btn:hover {
-    background-color: #000000;
-}
-
-#radio1:checked~.first {
-    margin-left: 0;
-}
-
-#radio2:checked~.first {
-    margin-left: -100%;
-}
-
-#radio3:checked~.first {
-    margin-left: -200%;
-}
-
-#radio4:checked~.first {
-    margin-left: -300%;
-}
-
-#radio5:checked~.first {
-    margin-left: -400%;
-}
-
-#radio6:checked~.first {
-    margin-left: -500%;
-}
-
-#radio7:checked~.first {
-    margin-left: -600%;
-}
-
-#radio8:checked~.first {
-    margin-left: -700%;
-}
-
-#radio9:checked~.first {
-    margin-left: -800%;
-}
-
-#radio10:checked~.first {
-    margin-left: -900%;
-}
-
-#radio10:checked~.first {
-    margin-left: -1000%;
-}
-#radio11:checked~.first {
-    margin-left: -900%;
-}
-
-
-/*  fim do carrosel */
-
-/* Estilos para a seção de Novas Tendências */
-.trends {
+    max-width: 300px;
+    overflow: hidden;
     margin-top: 20px;
+}
+
+.slides {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    transition: transform 0.5s ease;
 }
 
-.trends h2 {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
+
+
+.slides img{
+    width:400px;
+    height: 400px;
 }
 
-.season {
-    text-align: center;
-    width: 200px;
-    margin-bottom: 20px;
+.slide.active {
+    display: block; /* Exibe o slide ativo */
+  
 }
 
-.season img {
-    height: auto;
-    width: 150px;
-    height: 250px;
+
+/* Seção de Novas Tendências */
+.trends {
+    display: flex;  /* Usa flexbox para alinhar os itens lado a lado */
+    justify-content: space-around; /* Distribui espaço entre os itens */
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens passem para a próxima linha, se necessário */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
 }
 
-.season button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
+.trends .season {
+   display: flex; /* Cada item da temporada ocupa um espaço igual */
+    margin: 10px; /* Adiciona uma margem ao redor de cada item */
+    flex-direction: column; /* Alinha os itens verticalmente em coluna */
+    align-items: center;  /* Centraliza os itens horizontalmente */
+    flex: 1;              /* Permite que cada item expanda proporcionalmente */
+    text-align: center;   /* Garante que o texto dentro de cada item esteja centralizado */
+
 }
 
-.season button:hover {
-    background-color: #585d63;
+.trends img {
+    width: 100%; /* Faz a imagem preencher a largura do container */
+    max-width: 250px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; 
+
 }
+
+.trends button {
+    width: auto;          /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;   /* Padding interno para fazer o botão parecer melhor */
+}
+
+/* moda feminina*/
+
+.fashion {
+    display: flex;       /* Ativa o Flexbox, que organiza os filhos lado a lado */
+    flex-wrap: wrap;     /* Permite que os itens passem para a próxima linha se não couberem */
+    justify-content: space-around; /* Distribui o espaço uniformemente em torno dos itens */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.fashion.intem {
+    display: flex; /* Cada item da temporada ocupa um espaço igual */
+     margin: 10px; /* Adiciona uma margem ao redor de cada item */
+     flex-direction: column; /* Alinha os itens verticalmente em coluna */
+     align-items: center;  /* Centraliza os itens horizontalmente */
+     flex: 1;              /* Permite que cada item expanda proporcionalmente */
+     text-align: center;   /* Garante que o texto dentro de cada item esteja centralizado */
+}
+
+.fashion img {
+    width: 100%;          /* Define a largura de cada imagem */
+    max-width: 180px;    /* Limita a largura máxima para evitar imagens muito grandes */
+    height: auto;        /* Mantém a proporção da altura em relação à largura */
+    margin: 10px;        /* Espaço ao redor de cada imagem */
+}
+
+.fashion button {
+    width: auto;          /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;   /* Padding interno para fazer o botão parecer melhor */
+}
+
+/* moda masculina*/
+
+.homen {
+    display: flex;       /* Ativa o Flexbox, que organiza os filhos lado a lado */
+    flex-wrap: wrap;     /* Permite que os itens passem para a próxima linha se não couberem */
+    justify-content: space-around; /* Distribui o espaço uniformemente em torno dos itens */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.homen.intens {
+    display: flex; /* Cada item da temporada ocupa um espaço igual */
+     margin: 10px; /* Adiciona uma margem ao redor de cada item */
+     flex-direction: column; /* Alinha os itens verticalmente em coluna */
+     align-items: center;  /* Centraliza os itens horizontalmente */
+     flex: 1;              /* Permite que cada item expanda proporcionalmente */
+     text-align: center;   /* Garante que o texto dentro de cada item esteja centralizado */
+}
+
+
+.homen img {
+    width: 100%;          /* Define a largura de cada imagem */
+    max-width: 180px;    /* Limita a largura máxima para evitar imagens muito grandes */
+    height: auto;        /* Mantém a proporção da altura em relação à largura */
+    margin: 10px;        /* Espaço ao redor de cada imagem */
+}
+
+.homen button {
+    width: auto;          /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;   /* Padding interno para fazer o botão parecer melhor */
+}
+
+
+
+
+
+
+
 
 
