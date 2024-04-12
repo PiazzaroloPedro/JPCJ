@@ -45,7 +45,7 @@ nav .nav-links li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #175ca1;
+    background-color: #4e5052;
     min-width: 200px; /* Largura do dropdown */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -59,12 +59,14 @@ nav .nav-links li a:hover {
 .dropdown-content .submenu .sub-content {
     display: none;
     position: absolute;
-    background-color: #0f1587;
-    min-width: 160px; /* Largura do submenu */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #585d63;
+    /* Largura do submenu igual à largura do menu pai */
+    width: 100%;
+    /* Largura do submenu */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left: 100%;
-    top: 0;
+    left: 0;
+    top: 100%;
 }
 
 .dropdown-content .submenu:hover .sub-content {
@@ -113,7 +115,7 @@ nav .nav-links li a:hover {
 }
 
 .carousel {
->>>>>>> Stashed changes
+/* >>>>>>> Stashed changes */
     position: relative;
     max-width: 300px;
     overflow: hidden;
