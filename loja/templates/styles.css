@@ -249,6 +249,28 @@ section{
     align-items: center;
 }
 
+.main-text h5{
+    color: rgb(23, 99, 99);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.main-text h3{
+    color: #050404;
+    font-size: 55px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text p{
+    color: #4e5052;
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
 
 
 
