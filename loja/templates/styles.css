@@ -330,7 +330,23 @@ section{
 }
 
 
+/*contatos*/
 
+.contact-about {
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos opostos nas extremidades */
+    margin: 20px 0; /* Adiciona margem superior e inferior para separação */
+}
+
+
+.contacts {
+    width: 48%; /* Divide o espaço disponível em duas colunas */
+    margin:50px;
+}
+
+.about {
+    width: 48%; /* Divide o espaço disponível em duas colunas */
+}
 
 
 
