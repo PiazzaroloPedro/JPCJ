@@ -33,3 +33,35 @@ slider.addEventListener('input', function() {
 
 
 //fim do carrosel de fotos
+
+// Função para rolar para o lado
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollContainer = document.querySelector('.scroll-container');
+    const scrollLeft = document.querySelector('.scroll-left');
+    const scrollRight = document.querySelector('.scroll-right');
+
+    // Verifica se o contêiner de rolagem existe
+    if (scrollContainer) {
+        const scrollStep = 300; // Define o tamanho do passo de rolagem em pixels
+
+        // Adiciona evento de clique à seta esquerda
+        scrollLeft.addEventListener('click', function() {
+            scrollContainer.scrollBy({
+                left: -scrollStep, // Rola para a esquerda
+                behavior: 'smooth' // Adiciona uma animação de rolagem suave
+            });
+        });
+
+        // Adiciona evento de clique à seta direita
+        scrollRight.addEventListener('click', function() {
+            scrollContainer.scrollBy({
+                left: scrollStep, // Rola para a direita
+                behavior: 'smooth' // Adiciona uma animação de rolagem suave
+            });
+        });
+    }
+});
+
+
+//fim das setas

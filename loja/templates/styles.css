@@ -189,9 +189,10 @@ nav .nav-links li a:hover {
 
 .fashion {
     display: flex;       /* Ativa o Flexbox, que organiza os filhos lado a lado */
-    flex-wrap: wrap;     /* Permite que os itens passem para a próxima linha se não couberem */
-    justify-content: space-around; /* Distribui o espaço uniformemente em torno dos itens */
     align-items: center; /* Alinha os itens verticalmente no centro */
+    overflow-x: auto;
+    margin-bottom: 20px;
+    white-space: nowrap; /* Impede que os itens se quebrem em várias linhas */
 }
 
 .fashion.intem {
@@ -214,6 +215,56 @@ nav .nav-links li a:hover {
 .fashion button {
     width: auto;          /* O botão tem a largura do seu conteúdo */
     padding: 10px 20px;   /* Padding interno para fazer o botão parecer melhor */
+}
+
+/* Estilo para o contêiner de rolagem */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Adiciona rolagem suave para dispositivos iOS */
+}
+
+/* Estilo para cada item */
+.item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  
+}
+
+
+.scroll-left,
+.scroll-right {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+
+.scroll-container {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens quebrem em várias linhas */
+    overflow-x: auto; /* Habilita a rolagem horizontal */
+    scrollbar-width: none; /* Remove a barra de rolagem padrão do navegador */
+    -ms-overflow-style: none; /* Remove a barra de rolagem do Internet Explorer */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Remove a barra de rolagem do WebKit */
 }
 
 /* moda masculina*/
@@ -366,4 +417,33 @@ button {
 button:hover {
     background-color: #97cadb; /* Cor de fundo ao passar o cursor */
 }
+
+/* Estilo para as bolinhas de cor */
+.color-dot {
+    display: inline-block; /* Torna os elementos em linha */
+    width: 15px; /* Largura da bolinha */
+    height: 15px; /* Altura da bolinha */
+    border-radius: 50%; /* Torna a bolinha circular */
+    margin-right: 5px; /* Espaço à direita para separar da próxima cor */
+}
+
+/* Estilo para as cores disponíveis */
+.color-option {
+    display: inline-block; /* Torna os elementos em linha */
+    margin-right: 10px; /* Espaçamento à direita para separar da próxima opção */
+}
+
+/* Estilo para as bolinhas de cor */
+.color-dot {
+    display: inline-block; /* Torna os elementos em linha */
+    width: 15px; /* Largura da bolinha */
+    height: 15px; /* Altura da bolinha */
+    border-radius: 50%; /* Torna a bolinha circular */
+    margin-right: 5px; /* Espaço à direita para separar da próxima cor */
+}
+
+
+
+
+
 
