@@ -19,6 +19,9 @@ header {
     margin-left: 20px; /* Espaçamento da logo */
 }
 
+h1{
+    text-align: center;
+}
 
 nav .nav-links {
     list-style-type: none;
@@ -39,14 +42,14 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover {
-    background-color: #050404;
+    background-color: #1059c7;
 }
 
 /* Estilos do dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #5483b3;
+    background-color: #1059c7;
     min-width: 200px; /* Largura do dropdown */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -60,7 +63,7 @@ nav .nav-links li a:hover {
 .dropdown-content .submenu .sub-content {
     display: none;
     position: absolute;
-    background-color: #7da0ca;
+    background-color: #2c78d4;
     /* Largura do submenu igual à largura do menu */
     width: 100%;
     /* Largura do submenu */
@@ -104,15 +107,15 @@ nav .nav-links li a:hover {
 
 .search-container button[type="submit"] {
     padding: 10px 15px;
-    background-color: #555;
-    color: rgb(37, 33, 33);
+    background-color: #003cff;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .search-container button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #0722be;
 }
 
 .carousel {
@@ -135,9 +138,9 @@ nav .nav-links li a:hover {
 
 
 .slides img{
-    width:450px;
-    height: 450px;
-    border-radius: 10px;
+    width:500px;
+    height: 500px;
+    border-radius: 5px;
    
 }
 
