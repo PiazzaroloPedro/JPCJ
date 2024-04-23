@@ -31,12 +31,12 @@
                 <a href="#" class="dropbtn">Categorias</a>
                 <div class="dropdown-content">
                     <div class="submenu">
-                        <a href="#">Últimas Tendências</a>
+                        <a href="#Novas Tendências">Últimas Tendências</a>
                         <div class="sub-content">
-                            <a href="#">Verão</a>
-                            <a href="#">Outono</a>
-                            <a href="#">Primavera</a>
-                            <a href="#">Inverno</a>
+                            <a href="#Verão">Verão</a>
+                            <a href="#Outono">Outono</a>
+                            <a href="#Primavera">Primavera</a>
+                            <a href="#Inverno">Inverno</a>
                         </div>
                     </div>
                     <div class="submenu">
@@ -63,7 +63,7 @@
                             <!-- Aqui serão adicionados os botões de marcas dinamicamente -->
                         </div>
                         <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                        <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
 
                     </div>
                 </div>
@@ -112,23 +112,22 @@
   
 
     <!-- Seção de Novas Tendências -->
-    <h2 class="centered">Novas Tendências</h2>
+    <h2 class="centered" id="Novas Tendências">Novas Tendências</h2>
     <section class="trends">
-        
-        <div class="season">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrXJG3wTMBRJMxhQm35s69LPF94Gf4_QzOLLQeLAeTIg&s" alt="Verão">
-            <button>Verão</button>
+         <div class="season">
+            <img src="https://i.pinimg.com/564x/6e/c0/68/6ec0687c6b8d48805fd1816025cfcde4.jpg" id="Verão">
+            <button>Verão</button> 
         </div>
         <div class="season">
-            <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/11/folhas.jpg" alt="Outono">
+            <img src="https://i.pinimg.com/564x/58/ae/0a/58ae0a454ca1883dee4ffefcff155783.jpg" id="Outono">
             <button>Outono</button>
         </div>
         <div class="season">
-            <img src="https://s2.static.brasilescola.uol.com.br/img/2019/09/primavera.jpg" alt="Primavera">
+            <img src="https://i.pinimg.com/564x/1d/8a/f6/1d8af63db2212d69ddf6e56e0498e55c.jpg" id="Primavera">
             <button>Primavera</button>
         </div>
         <div class="season">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmYfbs109vII8e0s-zuUYo0lkAtQ-5waWV8xd5UBrDQ&s" alt="Inverno">
+            <img src="https://i.pinimg.com/564x/a1/0d/7e/a10d7ea26ff50a90bc8d2104a71897c4.jpg" id="Inverno">
             <button>Inverno</button>
         </div>
     </div>
@@ -136,28 +135,26 @@
     </section>
     
     <!-- Seção de Moda Feminina -->
-    <h2 class="centered">Moda Feminina</h2>
+    <h2 class="centered" id="Moda Feminina">Moda Feminina</h2>
     <section class="fashion">
-        <button class="scroll-left">←</button>  
-        <div class="scroll-container">
-        <div class="item">
-            <img src="/loja/loja/imagem/10.jpeg" alt="Produto 1">
+        <div class="item" id="Produto 1">
+            <img src="/loja/loja/imagem/10.jpeg" alt="Short jeans feminino cintura alta">
+            <p>Short jeans feminino cintura alta</p>
             <p>Valor: $XX.XX</p>
-            <p>Cores disponíveis: Azul</p>
-            <button>Colocar no Carrinho</button>
+            <button onclick="adicionarAoCarrinho('/loja/loja/imagem/10.jpeg', 'Short jeans feminino cintura alta')">Colocar no Carrinho</button>
         </div>
 
-        <div class="item">
-            <img src="/loja/loja/imagem/v4.jpeg" alt="Produto 2">
+        <div class="item" id="Produto 2">
+            <img src="/loja/loja/imagem/v4.jpeg" alt="Vestido elegante laranja">
+            <p>Vestido elegante laranja</p>
             <p>Valor: $XX.XX</p>
-            <p>Cores disponíveis: Rosa, Verde, Branco</p>
-            <button>Colocar no Carrinho</button>
+            <button onclick="adicionarAoCarrinho('/loja/loja/imagem/v4.jpeg','Vestido elegante laranja')">Colocar no Carrinho</button>
         </div>
-        <div class="item">
-            <img src="/loja/loja/imagem/c12.jpeg" alt="Produto 3 ">
+        <div class="item" id="Produto 3 ">
+            <img src="/loja/loja/imagem/c12.jpeg" alt=" calça jeans wide leg com borboletas cor caqui ">
+            <p>calça jeans wide leg com borboletas cor caqui</p>
             <p>Valor: $XX.XX</p>
-            <p>Cores disponíveis: Rosa, Verde, Branco</p>
-            <button>Colocar no Carrinho</button>
+            <button onclick="adicionarAoCarrinho('/loja/loja/imagem/c12.jpeg', 'calça jeans wide leg com borboletas cor caqui')">Colocar no Carrinho</button>
         </div>
         <div class="item">
             <img src="/loja/loja/imagem/v15.jpeg" alt="Produto 4">
@@ -169,12 +166,12 @@
         <!-- Adicione mais itens conforme necessário -->
     </div>
 
-    <button class="scroll-right">→</button>
+    
     </section>    
     
        
 
-        <h2 class="centered">Moda Masculina</h2>
+        <h2 class="centered" id="Moda Masculina">Moda Masculina</h2>
         <section class="homen">
             
             <div class="itens">
@@ -208,7 +205,7 @@
         </section>  
         
         
-        <h2 class="centered">Marcas</h2>
+        <h2 class="centered" id="Marcas">Marcas</h2>
     <section class="marcas">
         
         <div class="moda">
