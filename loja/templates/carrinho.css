@@ -12,14 +12,28 @@ header {
     background-color: #052659;
     padding: 6px;
     display: flex;
-    flex-direction: column; /* Alterado para coluna */
     justify-content: space-between;
     align-items: center;
-    height: 100%; /* Adicionado para ocupar toda a altura da área do cabeçalho */
+   
 }
 
-header h1 {
-    margin-bottom: 10px; /* Adicionado um espaçamento inferior para separar a logo do restante do conteúdo */
+ h1 {
+    align-items: center;
+    margin-right: 2600px;
+    margin-top: 20px;
+
+
+}
+
+.back-home {
+    background-color: #1059c7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 15px, 20px;
+   
 }
 
 
@@ -164,11 +178,11 @@ main {
     background-color: #1f0c6c;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 25px;
     cursor: pointer;
     border-radius: 5px;
-    align-items: center;
-    justify-content: center;
+    margin-left: 650px;
+    font-size: 20px;
   
 }
 
