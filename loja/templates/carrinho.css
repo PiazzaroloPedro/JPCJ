@@ -43,13 +43,13 @@ main {
 
 .product img {
     width: 100%;
-    /* Largura fixa de 150px */
+    
     height: 500px;
     /* Altura fixa de 150px */
     
     /* Remove espaços extras ao redor das imagens */
     margin: 0 auto;
-    /* Centraliza horizontalmente as imagens */
+    
 }
 
 .cart-items {
