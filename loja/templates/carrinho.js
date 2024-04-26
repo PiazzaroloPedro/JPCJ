@@ -1,3 +1,4 @@
+// carrinho.js
 // Função para exibir os produtos no carrinho
 function exibirProdutosNoCarrinho() {
     const carrinho = JSON.parse(sessionStorage.getItem('carrinho')) || [];
@@ -6,35 +7,24 @@ function exibirProdutosNoCarrinho() {
     // Limpa o conteúdo atual do carrinho
     carrinhoSection.innerHTML = '';
 
-    // Adiciona os produtos ao carrinho em linhas de até 4 produtos por linha
-    for (let i = 0; i < carrinho.length; i += 4) {
-        const row = document.createElement('div');
-        row.classList.add('row');
-
-        for (let j = i; j < i + 4 && j < carrinho.length; j++) {
-            const divProduto = document.createElement('div');
-            divProduto.classList.add('produto');
-            divProduto.innerHTML = `
-                <div>
-                    <img src="${carrinho[j].imagemURL}">
-                    <p>${carrinho[j].descricao}</p>
-                </div>
-            `;
-            row.appendChild(divProduto);
-        }
-
-        carrinhoSection.appendChild(row);
-    }
-
-    // Adiciona o event listener para o botão "Limpar Carrinho"
-    const clearCartButton = document.querySelector('.clear-cart');
-    clearCartButton.addEventListener('click', function () {
-        // Limpa o carrinho na sessionStorage
-        sessionStorage.removeItem('carrinho');
-        // Reexibe os produtos no carrinho (que estarão vazios após limpar)
-        exibirProdutosNoCarrinho();
+    // Adiciona os produtos ao carrinho
+    carrinho.forEach(produto => {
+        const divProduto = document.createElement('div');
+        divProduto.classList.add('product');
+        divProduto.innerHTML = `
+            <img src="${produto.imagemURL}" alt="${produto.descricao}">
+        `;
+        carrinhoSection.appendChild(divProduto);
     });
 }
 
 // Chama a função ao carregar a página
 window.onload = exibirProdutosNoCarrinho;
+
+// Event listener para limpar o carrinho
+document.querySelector('.clear-cart').addEventListener('click', function () {
+    // Limpa o carrinho na sessionStorage
+    sessionStorage.removeItem('carrinho');
+    // Atualiza a exibição dos produtos no carrinho
+    exibirProdutosNoCarrinho();
+});

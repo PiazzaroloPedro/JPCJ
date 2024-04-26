@@ -35,15 +35,18 @@ main {
 .cart-item {
     margin-bottom: 20px;
 }
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .product img {
-    width: 150px;
+    width: 100%;
     /* Largura fixa de 150px */
-    height: 150px;
+    height: 500px;
     /* Altura fixa de 150px */
-    object-fit: cover;
-    /* Garante que as imagens mantenham a proporção e preencham o espaço */
-    display: block;
+    
     /* Remove espaços extras ao redor das imagens */
     margin: 0 auto;
     /* Centraliza horizontalmente as imagens */
