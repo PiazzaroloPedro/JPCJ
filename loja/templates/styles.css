@@ -398,6 +398,54 @@ button:hover {
     margin-right: 5px; /* Espaço à direita para separar da próxima cor */
 }
 
+/* bermuda masculina*/
+
+.bermudas {
+    display: flex;
+    /* Ativa o Flexbox, que organiza os filhos lado a lado */
+    flex-wrap: wrap;
+    /* Permite que os itens passem para a próxima linha se não couberem */
+    justify-content: space-around;
+    /* Distribui o espaço uniformemente em torno dos itens */
+    align-items: center;
+    /* Alinha os itens verticalmente no centro */
+    padding: 20px;
+}
+
+.bermudas.intens {
+    display: flex;
+    /* Cada item da temporada ocupa um espaço igual */
+    margin: 10px;
+    /* Adiciona uma margem ao redor de cada item */
+    flex-direction: column;
+    /* Alinha os itens verticalmente em coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    flex: 1;
+    /* Permite que cada item expanda proporcionalmente */
+    text-align: center;
+    /* Garante que o texto dentro de cada item esteja centralizado */
+}
+
+
+.bermudas img {
+    max-width: 400px;
+    width: auto;
+    /* Define a largura de cada imagem */
+    height: 400px;
+    /* Mantém a proporção da altura em relação à largura */
+    margin: 10px;
+    /* Espaço ao redor de cada imagem */
+    border-radius: 10px;
+}
+
+.bermudas button {
+    width: auto;
+    /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;
+    /* Padding interno para fazer o botão parecer melhor */
+}
+
 
 
 
