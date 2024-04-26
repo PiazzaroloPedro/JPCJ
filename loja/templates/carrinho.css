@@ -3,64 +3,87 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color:  rgba(13, 21, 31, 0.2);
 }
 
 header {
-    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    background-color: #052659;
+    padding: 6px;
+    display: flex;
+    flex-direction: column; /* Alterado para coluna */
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Adicionado para ocupar toda a altura da área do cabeçalho */
 }
+
+header h1 {
+    margin-bottom: 10px; /* Adicionado um espaçamento inferior para separar a logo do restante do conteúdo */
+}
+
 
 main {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
-}
-
-.products,
-.cart {
-    width: 45%;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-.products h2,
-.cart h2 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-}
-
-.product,
-.cart-item {
-    margin-bottom: 20px;
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.product img {
-    max-width: 400px;
-        width: auto;
-        /* Define a largura de cada imagem */
-        height: 400px;
-        /* Mantém a proporção da altura em relação à largura */
-        margin: 10px;
-        /* Espaço ao redor de cada imagem */
-        border-radius: 10px;
+    margin-top: 50px;
     
 }
 
 .cart-items {
     list-style-type: none;
     padding: 0;
+    margin-right: 800px;
 }
 
-.cart-total {
-    margin-top: 20px;
-    text-align: right;
+.cart-item {
+    margin-bottom: 30px;
+    display: flex; /* Alteração */
+    align-items: flex-start; /* Modificação */
+    background-color: rgb(233, 224, 224); /* Fundo branco para cada item */
+    padding: 20px; /* Adição para criar a margem interna */
+    border-radius: 10px; /* Arredondar as bordas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionar sombra */
+   
+}
+
+.atras{
+    margin-left: 20px;
+    padding: 20px; /* Adição para criar a margem entre os produtos e o fundo */
+}
+
+
+.cart-item img {
+    max-width: 250px;
+    max-height:250px ;
+    margin: 10px;
+    border-radius: 10px;
+    object-fit: contain;
+    
+}
+
+.cart-item .product-description {
+    flex-grow: 1; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+
+.cart-item .tamanho-buttons {
+    margin-top: 10px; /* Adição */
+    display: flex; /* Adição */
+}
+
+
+.cart-item .tamanho-buttons button {
+    background-color: #164aa2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px; /* Alteração */
 }
 
 .clear-cart {
@@ -70,6 +93,7 @@ main {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+  
 }
 
 .add-to-cart {
@@ -81,16 +105,3 @@ main {
     border-radius: 5px;
 }
 
-/* Adicionando estilos para a exibição das fotos no carrinho */
-#carrinho {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-    /* Espaçamento entre as imagens */
-}
-
-.product {
-    width: calc(25% - 20px);
-    /* Definindo o tamanho de cada produto (25% da largura total com espaçamento de 20px) */
-}

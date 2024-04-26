@@ -10,9 +10,19 @@ function exibirProdutosNoCarrinho() {
     // Adiciona os produtos ao carrinho
     carrinho.forEach(produto => {
         const divProduto = document.createElement('div');
-        divProduto.classList.add('product');
-        divProduto.innerHTML = `
-            <img src="${produto.imagemURL}" alt="${produto.descricao}">
+        divProduto.classList.add('cart-item');
+        divProduto.innerHTML = ` 
+        <img src="${produto.imagemURL}" alt="${produto.descricao}">
+        <div class="product-description">
+            <p>${produto.descricao}</p>
+            <div class="tamanho-buttons">
+                <button>PP</button>
+                <button>P</button>
+                <button>M</button>
+                <button>G</button>
+                <button>GG</button>
+            </div>
+        </div>
         `;
         carrinhoSection.appendChild(divProduto);
     });
