@@ -23,10 +23,26 @@ header h1 {
 }
 
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; /* Adicione uma margem superior para separar do cabeçalho */
+}
+
+.continue-shopping {
+    margin-right: 990px; /* Adicione a margem para separar o botão do título */
+}
+
+.cart-title {
+    margin-left: 60px; /* Adicione a margem para separar o título do botão */
+}
+
+
 main {
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 7px;
     
 }
 
@@ -46,6 +62,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionar sombra */
    
 }
+
 
 .atras{
     margin-left: 20px;
@@ -70,29 +87,88 @@ main {
 }
 
 
-.cart-item .tamanho-buttons {
-    margin-top: 10px; /* Adição */
-    display: flex; /* Adição */
+.cart-item .options {
+    display: flex;
+    flex-direction: column; /* Alterado para coluna para empilhar os elementos verticalmente */
+    align-items: flex-start; /* Alinhamento à esquerda */
 }
 
+.cart-item .size-buttons {
+    margin-right: 10px;
+}
 
-.cart-item .tamanho-buttons button {
+.cart-item .quantity-selector {
+    display: flex;
+    flex-direction: column; /* Alterado para linha para posicionar a quantidade e o valor lado a lado */
+    align-items: flex-start; /* Alinhamento vertical */
+    margin-top: 5px; /* Adicionado espaçamento entre a palavra "Quantidade" e o seletor de quantidade */
+}
+
+.cart-item .quantity-selector label {
+    margin-right: 10px; /* Adicionado espaçamento entre a label e o seletor de quantidade */
+}
+
+.cart-item .quantity-selector select {
+    width: 70px; /* Reduz a largura do quadrado */
+    border-radius: 8px; /* Torna as bordas mais arredondadas */
+}
+
+.cart-item .size-buttons button {
     background-color: #164aa2;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    margin-right: 10px; /* Alteração */
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
-.clear-cart {
-    background-color: #f44336;
+
+.valor-produto {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.cart-item .product-price {
+  margin-top: 20px; /* Espaçamento entre a seleção de quantidade e o valor do produto */
+}
+
+.cart-item .product-price p {
+    margin: 0 ; /* Remover margem padrão */
+}
+
+.cart-item .product-price .valor-produto {
+    font-weight: bold; /* Negrito para destacar o valor */
+    color: #333; /* Cor do texto */
+}
+
+
+.cart-item .remove-product {
+    background-color: #03166c;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+
+
+
+.clear-cart {
+    background-color: #1f0c6c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
   
 }
 
