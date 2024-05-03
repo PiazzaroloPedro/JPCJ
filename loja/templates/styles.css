@@ -398,44 +398,73 @@ button:hover {
     margin-right: 5px; /* Espaço à direita para separar da próxima cor */
 }
 
-/* bermuda feminina*/
+/* blusa   feminina  */
+
+.blusafeminina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
+    padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
+}
+
+.blusafeminina .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
+    margin: 10px;
+}
+
+.blusafeminina img {
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
+    height: auto;
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+}
+
+.blusafeminina button {
+    width: auto;
+    /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;
+    /* Padding interno para fazer o botão parecer melhor */
+}
+
+/*  fim  */
+
+/* bermuda   feminina  */
 
 .bermudafeminina {
     display: flex;
-    /* Ativa o Flexbox, que organiza os filhos lado a lado */
     flex-wrap: wrap;
-    /* Permite que os itens passem para a próxima linha se não couberem */
     justify-content: space-around;
-    /* Distribui o espaço uniformemente em torno dos itens */
-    align-items: center;
-    /* Alinha os itens verticalmente no centro */
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
     padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
 }
 
-.bermudafeminina.intem {
-    display: flex;
-    /* Cada item da temporada ocupa um espaço igual */
-    margin: 5px;
-    /* Adiciona uma margem ao redor de cada item */
-    flex-direction: column;
-    /* Alinha os itens verticalmente em coluna */
-    align-items: center;
-    /* Centraliza os itens horizontalmente */
-    flex: 1;
-    /* Permite que cada item expanda proporcionalmente */
-    text-align: center;
-    /* Garante que o texto dentro de cada item esteja centralizado */
+.bermudafeminina .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
+    margin: 10px;
 }
 
 .bermudafeminina img {
-
-    max-width: 300px;
-    /* Limita a largura máxima para evitar imagens muito grandes */
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
     height: auto;
-    /* Mantém a proporção da altura em relação à largura */
-    margin: 10px;
-    /* Espaço ao redor de cada imagem */
-
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
 }
 
 .bermudafeminina button {
@@ -444,47 +473,118 @@ button:hover {
     padding: 10px 20px;
     /* Padding interno para fazer o botão parecer melhor */
 }
+
+/*  fim  */
+
+/* calca     feminina     */
+
+.calcafeminina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
+    padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
+}
+
+.calcafeminina .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
+    margin: 10px;
+}
+
+.calcafeminina img {
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
+    height: auto;
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+}
+
+.calcafeminina button {
+    width: auto;
+    /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;
+    /* Padding interno para fazer o botão parecer melhor */
+}
+/*calça*/
+/*  fim  */
+
+/* vestido */
+
+.vestido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
+    padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
+}
+
+.vestido .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
+    margin: 10px;
+}
+
+.vestido img {
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
+    height: auto;
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+    max-width: 400px;
+    /* Define uma largura máxima para as imagens */
+}
+
+.vestido button {
+    width: auto;
+    /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;
+    /* Padding interno para fazer o botão parecer melhor */
+}
+
 /*  fim  */
 
 
-/* bermuda masculina*/
+/* bermuda masculina   */
+
 .bermudas {
     display: flex;
-    /* Ativa o Flexbox, que organiza os filhos lado a lado */
     flex-wrap: wrap;
-    /* Permite que os itens passem para a próxima linha se não couberem */
     justify-content: space-around;
-    /* Distribui o espaço uniformemente em torno dos itens */
-    align-items: center;
-    /* Alinha os itens verticalmente no centro */
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
     padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
 }
 
-.bermudas.intens {
-    display: flex;
-    /* Cada item da temporada ocupa um espaço igual */
+.bermudas .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
     margin: 10px;
-    /* Adiciona uma margem ao redor de cada item */
-    flex-direction: column;
-    /* Alinha os itens verticalmente em coluna */
-    align-items: center;
-    /* Centraliza os itens horizontalmente */
-    flex: 1;
-    /* Permite que cada item expanda proporcionalmente */
-    text-align: center;
-    /* Garante que o texto dentro de cada item esteja centralizado */
 }
-
 
 .bermudas img {
-    max-width: 400px;
-    width: auto;
-    /* Define a largura de cada imagem */
-    height: 400px;
-    /* Mantém a proporção da altura em relação à largura */
-    margin: 10px;
-    /* Espaço ao redor de cada imagem */
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
+    height: auto;
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
     border-radius: 10px;
+    /* Adiciona bordas arredondadas */
 }
 
 .bermudas button {
@@ -494,104 +594,129 @@ button:hover {
     /* Padding interno para fazer o botão parecer melhor */
 }
 
+/*bermuda masculina*/
+/*  fim  */
+
+/* calça masculina   */
+
+.calcamasculina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
+    padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
+}
+
+.calcamasculina .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
+    margin: 10px;
+}
+
+.calcamasculina img {
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
+    height: auto;
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+}
+
+.calcamasculina button {
+    width: auto;
+    /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;
+    /* Padding interno para fazer o botão parecer melhor */
+}
+
+/*calça masculina*/
+/*  fim  */
 
 
+/* camisa masculina   */
+
+.camisamasculina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
+    padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
+}
+
+.camisamasculina .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
+    margin: 10px;
+}
+
+.camisamasculina img {
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
+    height: auto;
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+}
+
+.camisamasculina button {
+    width: auto;
+    /* O botão tem a largura do seu conteúdo */
+    padding: 10px 20px;
+    /* Padding interno para fazer o botão parecer melhor */
+}
+
+/*camisa masculina*/
 /*  fim  */
 
 
 
-/*começo de calça feminina */
+/* tennis masculina   */
 
-.calcafeminina {
+.tennismasculino {
     display: flex;
-    /* Ativa o Flexbox, que organiza os filhos lado a lado */
     flex-wrap: wrap;
-    /* Permite que os itens passem para a próxima linha se não couberem */
     justify-content: space-around;
-    /* Distribui o espaço uniformemente em torno dos itens */
-    align-items: center;
-    /* Alinha os itens verticalmente no centro */
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
     padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
 }
 
-.calcafeminina.intem {
-    display: flex;
-    /* Cada item da temporada ocupa um espaço igual */
-    margin: 5px;
-    /* Adiciona uma margem ao redor de cada item */
-    flex-direction: column;
-    /* Alinha os itens verticalmente em coluna */
-    align-items: center;
-    /* Centraliza os itens horizontalmente */
-    flex: 1;
-    /* Permite que cada item expanda proporcionalmente */
-    text-align: center;
-    /* Garante que o texto dentro de cada item esteja centralizado */
-}
-
-.calcafeminina img {
-
-    max-width: 300px;
-    /* Limita a largura máxima para evitar imagens muito grandes */
-    height: auto;
-    /* Mantém a proporção da altura em relação à largura */
+.tennismasculino .item {
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
     margin: 10px;
-    /* Espaço ao redor de cada imagem */
-
 }
 
-.calcafeminina button {
+.tennismasculino img {
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
+    height: auto;
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
+}
+
+.tennismasculino button {
     width: auto;
     /* O botão tem a largura do seu conteúdo */
     padding: 10px 20px;
     /* Padding interno para fazer o botão parecer melhor */
 }
 
-/* fim*/ 
+/*tennis masculina*/
+/*  fim  */
 
-/* começo de vestido */ 
-
-.vestido {
-    display: flex;
-    /* Ativa o Flexbox, que organiza os filhos lado a lado */
-    flex-wrap: wrap;
-    /* Permite que os itens passem para a próxima linha se não couberem */
-    justify-content: space-around;
-    /* Distribui o espaço uniformemente em torno dos itens */
-    align-items: center;
-    /* Alinha os itens verticalmente no centro */
-    padding: 20px;
-}
-
-.vestido.intem {
-    display: flex;
-    /* Cada item da temporada ocupa um espaço igual */
-    margin: 5px;
-    /* Adiciona uma margem ao redor de cada item */
-    flex-direction: column;
-    /* Alinha os itens verticalmente em coluna */
-    align-items: center;
-    /* Centraliza os itens horizontalmente */
-    flex: 1;
-    /* Permite que cada item expanda proporcionalmente */
-    text-align: center;
-    /* Garante que o texto dentro de cada item esteja centralizado */
-}
-
-.vestido img {
-
-    max-width: 300px;
-    /* Limita a largura máxima para evitar imagens muito grandes */
-    height: auto;
-    /* Mantém a proporção da altura em relação à largura */
-    margin: 10px;
-    /* Espaço ao redor de cada imagem */
-
-}
-
-.vestido button {
-    width: auto;
-    /* O botão tem a largura do seu conteúdo */
-    padding: 10px 20px;
-    /* Padding interno para fazer o botão parecer melhor */
-}
