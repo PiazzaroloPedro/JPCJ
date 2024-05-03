@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:  rgba(13, 21, 31, 0.2);
+    background-color: rgba(13, 21, 31, 0.2);
 }
 
 header {
@@ -14,15 +14,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
- h1 {
+.logo {
+    flex-grow: 1; /* Faz a logo ocupar o espaço disponível */
+}
+
+.logo h1 {
+    margin: 0; /* Remove margens padrão do h1 */
+}
+
+.button-header {
+    display: flex;
     align-items: center;
-    margin-right: 2600px;
-    margin-top: 20px;
-
-
 }
 
 .back-home {
@@ -32,79 +36,132 @@ header {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    padding: 15px, 20px;
-   
+    padding: 15px 20px;
 }
-
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px; /* Adicione uma margem superior para separar do cabeçalho */
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 250px;
 }
 
 .continue-shopping {
-    margin-right: 990px; /* Adicione a margem para separar o botão do título */
+    margin-right: 20px; /* Reduz a margem direita do link */
 }
 
 .cart-title {
-    margin-left: 60px; /* Adicione a margem para separar o título do botão */
+    margin-left: 50px;
 }
-
 
 main {
     display: flex;
-    justify-content: space-around;
-    margin-top: 7px;
-    
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .cart-items {
     list-style-type: none;
     padding: 0;
-    margin-right: 800px;
+    margin-right: 20px; /* Reduz a margem direita da lista de itens */
+    max-width: 800px;
+    width: 100%;
 }
 
 .cart-item {
-    margin-bottom: 30px;
-    display: flex; /* Alteração */
-    align-items: flex-start; /* Modificação */
-    background-color: rgb(233, 224, 224); /* Fundo branco para cada item */
-    padding: 20px; /* Adição para criar a margem interna */
-    border-radius: 10px; /* Arredondar as bordas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionar sombra */
-   
-}
-
-
-.atras{
-    margin-left: 20px;
-    padding: 20px; /* Adição para criar a margem entre os produtos e o fundo */
-}
-
-
-.cart-item img {
-    max-width: 250px;
-    max-height:250px ;
-    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(233, 224, 224);
+    padding: 20px;
     border-radius: 10px;
-    object-fit: contain;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 300px;
+    margin-right: 150px; /* Remove a margem esquerda */
+}
+
+.atras {
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary {
+    position: relative;
+    background-color: rgb(233, 224, 224);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 700px;
+    max-height: 400px;
+    width: 600px;
+    margin-left: 0; /* Remove a margem esquerda */
+    margin-right: 0; /* Remove a margem direita */
+}
+
+.subtotal, .delivery, .total {
+    margin-bottom: 10px;
+}
+
+.finalize-purchase {
+    background-color: #1f0c6c;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment-methods {
+    position: absolute; /* Adiciona posição absoluta ao container das formas de pagamento */
+    bottom: 20px; /* Define a distância do fundo do container pai */
+    left: 20px; /* Define a distância da esquerda do container pai */
+    display: flex; /* Adiciona display flex para alinhar os ícones horizontalmente */
+    margin-left: 1000px;
+}
+
+.payment-methods img {
+    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 30px;
+    margin-right: 10px; /* Adiciona margem entre os ícones */
+    
+
+    
     
 }
 
-.cart-item .product-description {
-    flex-grow: 1; 
-    padding: 10px;
+.cart-item img {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 10px;
     border-radius: 10px;
-    margin-bottom: 10px; 
+    object-fit: contain;
 }
 
+.cart-item .product-description {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
 .cart-item .options {
     display: flex;
-    flex-direction: column; /* Alterado para coluna para empilhar os elementos verticalmente */
-    align-items: flex-start; /* Alinhamento à esquerda */
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .cart-item .size-buttons {
@@ -113,18 +170,18 @@ main {
 
 .cart-item .quantity-selector {
     display: flex;
-    flex-direction: column; /* Alterado para linha para posicionar a quantidade e o valor lado a lado */
-    align-items: flex-start; /* Alinhamento vertical */
-    margin-top: 5px; /* Adicionado espaçamento entre a palavra "Quantidade" e o seletor de quantidade */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px;
 }
 
 .cart-item .quantity-selector label {
-    margin-right: 10px; /* Adicionado espaçamento entre a label e o seletor de quantidade */
+    margin-right: 10px;
 }
 
 .cart-item .quantity-selector select {
-    width: 70px; /* Reduz a largura do quadrado */
-    border-radius: 8px; /* Torna as bordas mais arredondadas */
+    width: 70px;
+    border-radius: 8px;
 }
 
 .cart-item .size-buttons button {
@@ -138,26 +195,24 @@ main {
     margin-bottom: 10px;
 }
 
-
 .valor-produto {
     font-weight: bold;
     color: #333;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .cart-item .product-price {
-  margin-top: 20px; /* Espaçamento entre a seleção de quantidade e o valor do produto */
+    margin-top: 20px;
 }
 
 .cart-item .product-price p {
-    margin: 0 ; /* Remover margem padrão */
+    margin: 0;
 }
 
 .cart-item .product-price .valor-produto {
-    font-weight: bold; /* Negrito para destacar o valor */
-    color: #333; /* Cor do texto */
+    font-weight: bold;
+    color: #333;
 }
-
 
 .cart-item .remove-product {
     background-color: #03166c;
@@ -167,12 +222,8 @@ main {
     cursor: pointer;
     border-radius: 5px;
     margin-left: 10px;
-    margin-top: 40px;
-    margin-right: 20px;
+    margin-top: 20px;
 }
-
-
-
 
 .clear-cart {
     background-color: #1f0c6c;
@@ -181,13 +232,13 @@ main {
     padding: 20px 25px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 650px;
+    margin-left: 20px; /* Ajusta a margem esquerda conforme necessário */
     font-size: 20px;
-  
+    margin-left: 250px;
 }
 
 .add-to-cart {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -195,3 +246,7 @@ main {
     border-radius: 5px;
 }
 
+/* Adicionando estilo para o botão de tamanho pressionado */
+.size-buttons button.pressed {
+    background-color: #1e73be;
+}

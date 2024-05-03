@@ -11,30 +11,61 @@
 
 <body>
     <header>
-        <div class="left-header">
-            <h1>VogueVitality</h1>
+        <div class="button-header">
             <a href="index.html" ><button class="back-home">Home</button></a>
+        </div>
+
+        <div class="logo">
+            <h1>VogueVitality</h1>
         </div>
 
         <div id="detalhesProduto">
             <img id="imagemProduto">
             <p id="descricaoProduto"></p>
         </div>
-</header>
+    </header>
 
-     <div class="header-content">
+    <div class="header-content">
         <h2 class="cart-title">Meu Carrinho</h2>
         <a href="index.html" class="continue-shopping">Continuar Comprando</a>
-     </div>
-
-       <div class="atras">
-       <main>
-        <section id="carrinho" class="cart-items">
-            <!-- Aqui serão exibidos os produtos adicionados ao carrinho -->
-        </section>
-      </main>
     </div>
+
+    <div class="atras">
+        <main>
+            <section id="carrinho" class="cart-items">
+                <!-- Aqui serão exibidos os produtos adicionados ao carrinho -->
+            </section>
+            <div class="summary">
+                <div class="subtotal">
+                    <h3>Subtotal</h3>
+                    <p>R$ 00,00</p>
+                </div>
+                <div class="delivery">
+                    <h3>Entrega</h3>
+                    <p>R$ 00,00</p>
+                </div>
+                <div class="total">
+                    <h3>Total</h3>
+                    <p>R$ 00,00</p>
+                </div>
+                <button class="finalize-purchase">Finalizar Compra</button>
+                <div class="payment-methods">
+                    <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-512.png" alt="Visa">
+                    <img src="https://static-00.iconduck.com/assets.00/mastercard-icon-2048x1587-tygju446.png" alt="Mastercard">
+                    <img src="https://logopng.com.br/logos/elo-30.png" alt="Mastercard">
+                    <img src="https://cdn0.iconfinder.com/data/icons/50-payment-system-icons-2/480/Boleto.png" alt="Mastercard">
+                    <img src="https://logospng.org/wp-content/uploads/pix.png" alt="Mastercard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png" alt="Mastercard">
+                    <!-- Adicione mais imagens de formas de pagamento conforme necessário -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    
     <button class="clear-cart">Limpar Carrinho</button>
     <script src="carrinho.js"></script>
+
+</body>
 
 </html>

@@ -1,3 +1,12 @@
+// Função para lidar com a seleção do tamanho do produto
+function selecionarTamanho(tamanhoButton) {
+    const sizeButtons = tamanhoButton.parentNode.querySelectorAll('button');
+    sizeButtons.forEach(button => {
+        button.classList.remove('pressed'); // Remove a classe 'pressed' de todos os botões de tamanho
+    });
+    tamanhoButton.classList.add('pressed'); // Adiciona a classe 'pressed' apenas ao botão clicado
+}
+
 // Função para exibir os produtos no carrinho
 function exibirProdutosNoCarrinho() {
     const carrinho = JSON.parse(sessionStorage.getItem('carrinho')) || [];
@@ -30,6 +39,8 @@ function exibirProdutosNoCarrinho() {
                             <option value="3">3</option>
                         </select>
                         <div class="product-price">
+                            <!-- Ícone do coração para favoritar -->
+                            <i class="fas fa-heart"></i>
                             <p>Valor: R$ <span class="valor-produto">${extrairValorProduto(produto.descricao)}</span></p>
                             <button class="remove-product">Remover</button>
                         </div>
@@ -54,15 +65,20 @@ function exibirProdutosNoCarrinho() {
             exibirProdutosNoCarrinho(); // Atualiza a exibição dos produtos no carrinho
         });
 
+        // Adiciona event listeners aos botões de tamanho
+        const sizeButtons = divProduto.querySelectorAll('.size-buttons button');
+        sizeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                selecionarTamanho(button); // Chama a função com o botão clicado como argumento
+            });
+        });
+
         carrinhoSection.appendChild(divProduto);
     });
 }
 
-
-
+// Função para extrair o valor do produto da descrição
 function extrairValorProduto(descricao) {
-    // Exemplo: "Nome do Produto - Valor: R$ 10.00"
-    // Esta função extrai o valor do produto da descrição
     const padrao = /Valor: R\$\s*(\d+\.\d{2})/;
     const correspondencia = descricao.match(padrao);
     if (correspondencia) {
@@ -71,7 +87,6 @@ function extrairValorProduto(descricao) {
         return 'Valor não encontrado'; // Retorna uma mensagem se o valor do produto não for encontrado na descrição
     }
 }
-
 
 // Função para alternar a cor do ícone de coração quando pressionado
 function toggleFavorite() {
@@ -84,12 +99,8 @@ document.querySelectorAll('.product-price i.fa-heart').forEach(heartIcon => {
     heartIcon.addEventListener('click', toggleFavorite);
 });
 
-
 // Chama a função ao carregar a página
 window.onload = exibirProdutosNoCarrinho;
-
-// Após adicionar os produtos, exibir o carrinho
-exibirProdutosNoCarrinho();
 
 // Event listener para limpar o carrinho
 document.querySelector('.clear-cart').addEventListener('click', function () {
