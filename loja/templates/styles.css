@@ -403,35 +403,32 @@ button:hover {
 .blusafeminina {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    /* Alterado de 'center' para 'flex-start' */
+    justify-content: space-around; 
     padding: 20px;
-    max-width: 2100px;
-    /* Ajuste conforme necessário */
+    
 }
 
 .blusafeminina .item {
-    width: calc(20% - 20px);
-    /* Ajuste para permitir 5 itens por linha com margens */
-    /* Define a largura máxima de cada item */
-    margin: 10px;
+   display: flex;
+   margin: 5px;
+   flex-direction: column;
+  
+   flex: 1;
+  
 }
 
 .blusafeminina img {
-    width: 100%;
-    /* Alterado para ocupar 100% da largura do contêiner */
-    height: auto;
-    border: 2px solid #ccc;
-    /* Adiciona uma borda sólida de 2px */
-    border-radius: 10px;
-    /* Adiciona bordas arredondadas */
+    max-width: 300px;
+    height: 400px;
+    margin: 10px;
+    
+ 
 }
 
 .blusafeminina button {
-    width: auto;
+    width: 300px;
     /* O botão tem a largura do seu conteúdo */
-    padding: 10px 20px;
+    padding: 10px 5px;
     /* Padding interno para fazer o botão parecer melhor */
 }
 
@@ -440,37 +437,28 @@ button:hover {
 /* bermuda   feminina  */
 
 .bermudafeminina {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    /* Alterado de 'center' para 'flex-start' */
-    padding: 20px;
-    max-width: 2100px;
-    /* Ajuste conforme necessário */
+  display: flex;
+  justify-content: space-around;
+  align-items: self-start;
 }
 
 .bermudafeminina .item {
-    width: calc(20% - 20px);
-    /* Ajuste para permitir 5 itens por linha com margens */
-    /* Define a largura máxima de cada item */
-    margin: 10px;
-}
-
+    display: inline-block; /* Os itens ficarão lado a lado */
+    vertical-align: top; /* Alinha os itens no topo */
+    margin-right: 10px; /* Adiciona espaço entre os itens */
+    white-space: normal; /* Permite que o texto envolva o conteúdo */
+} 
 .bermudafeminina img {
-    width: 100%;
-    /* Alterado para ocupar 100% da largura do contêiner */
+    max-width: 300px;
     height: auto;
-    border: 2px solid #ccc;
-    /* Adiciona uma borda sólida de 2px */
-    border-radius: 10px;
-    /* Adiciona bordas arredondadas */
+   
+    
 }
 
 .bermudafeminina button {
-    width: auto;
+    width: 300px;
     /* O botão tem a largura do seu conteúdo */
-    padding: 10px 20px;
+    padding: 10px 5px;
     /* Padding interno para fazer o botão parecer melhor */
 }
 
@@ -482,28 +470,25 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    
     /* Alterado de 'center' para 'flex-start' */
-    padding: 20px;
-    max-width: 2100px;
-    /* Ajuste conforme necessário */
+    padding: 20px, 20px;
 }
 
 .calcafeminina .item {
-    width: calc(20% - 20px);
-    /* Ajuste para permitir 5 itens por linha com margens */
-    /* Define a largura máxima de cada item */
-    margin: 10px;
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+   
+    flex-wrap: 1;
 }
 
+
+
 .calcafeminina img {
-    width: 100%;
-    /* Alterado para ocupar 100% da largura do contêiner */
-    height: auto;
-    border: 2px solid #ccc;
-    /* Adiciona uma borda sólida de 2px */
-    border-radius: 10px;
-    /* Adiciona bordas arredondadas */
+    max-width: 300px;
+    height: 400px;
+    margin: 10px;
 }
 
 .calcafeminina button {

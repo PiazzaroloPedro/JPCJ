@@ -130,7 +130,9 @@ main {
     bottom: 20px; /* Define a distância do fundo do container pai */
     left: 20px; /* Define a distância da esquerda do container pai */
     display: flex; /* Adiciona display flex para alinhar os ícones horizontalmente */
-    margin-left: 1000px;
+    margin-right: 300px;
+    margin-left: 250px;
+    margin-block-end: 20px;
 }
 
 .payment-methods img {
