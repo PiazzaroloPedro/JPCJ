@@ -437,32 +437,39 @@ button:hover {
 /* bermuda   feminina  */
 
 .bermudafeminina {
-  display: flex;
-  justify-content: space-around;
-  align-items: self-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* Alterado de 'center' para 'flex-start' */
+    padding: 20px;
+    max-width: 2100px;
+    /* Ajuste conforme necessário */
 }
 
 .bermudafeminina .item {
-    display: inline-block; /* Os itens ficarão lado a lado */
-    vertical-align: top; /* Alinha os itens no topo */
-    margin-right: 10px; /* Adiciona espaço entre os itens */
-    white-space: normal; /* Permite que o texto envolva o conteúdo */
-} 
+    width: calc(20% - 20px);
+    /* Ajuste para permitir 5 itens por linha com margens */
+    /* Define a largura máxima de cada item */
+    margin: 10px;
+}
+
 .bermudafeminina img {
-    max-width: 300px;
+    width: 100%;
+    /* Alterado para ocupar 100% da largura do contêiner */
     height: auto;
-   
-    
+    border: 2px solid #ccc;
+    /* Adiciona uma borda sólida de 2px */
+    border-radius: 10px;
+    /* Adiciona bordas arredondadas */
 }
 
 .bermudafeminina button {
-    width: 300px;
+    width: auto;
     /* O botão tem a largura do seu conteúdo */
-    padding: 10px 5px;
+    padding: 10px 20px;
     /* Padding interno para fazer o botão parecer melhor */
 }
-
-/*  fim  */
 
 /* calca     feminina     */
 
@@ -659,7 +666,6 @@ button:hover {
     padding: 10px 20px;
     /* Padding interno para fazer o botão parecer melhor */
 }
-
 /*camisa masculina*/
 /*  fim  */
 
