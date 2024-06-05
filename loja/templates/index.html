@@ -1,12 +1,14 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VogueVitality</title>
-    <link rel="icon" type="image/x-icon" href="/loja/loja/imagem/icon.png">
+    <link rel="icon" type="image/x-icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +28,7 @@
     </div>
     <nav>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/loja/templates/index.html">Home</a></li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">Categorias</a>
                 <div class="dropdown-content">
@@ -42,19 +44,19 @@
                     <div class="submenu">
                         <a href="#">Moda Feminina</a>
                         <div class="sub-content">
-                            <a href="blusafeminina.html">Blusas</a>
-                            <a href="bermudafeminina.html">Bermudas</a>
-                            <a href="calçafeminina.html">calça</a>
-                            <a href="vestido.html">Vestido</a>
+                            <a href="/loja/templates/blusafeminina.html">Blusas</a>
+                            <a href="/loja/templates/bermudafeminina.html">Bermudas</a>
+                            <a href="/loja/templates/calçafeminina.html">calça</a>
+                            <a href="/loja/templates/vestido.html">Vestido</a>
                         </div>
                     </div>
                     <div class="submenu">
                         <a href="#">Moda Masculina</a>
                         <div class="sub-content">
-                            <a href="bermudamasculina.html">Bermuda </a>
-                            <a href="calçamasculina.html">Calça </a>
-                            <a href="camisamasculina.html">Camisa </a>
-                            <a href="tennismasculina.html">Tennis</a>
+                            <a href="/loja/templates/bermudamasculina.html">Bermuda </a>
+                            <a href="/loja/templates/calçamasculina.html">Calça </a>
+                            <a href="/loja/templates/camisamasculina.html">Camisa </a>
+                            <a href="/loja/templates/tennismasculina.html">Tennis</a>
                         </div>
                     </div>
                     <div class="submenu">
@@ -62,8 +64,8 @@
                         <div class="sub-content">
                             <!-- Aqui serão adicionados os botões de marcas dinamicamente -->
                         </div>
-                        <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
-                        <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                        <li><a href="/loja/templates/login.html"><i class="fas fa-user"></i> Login</a></li>
+                        <li><a href="/loja/templates/carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
 
                     </div>
                 </div>
@@ -87,23 +89,24 @@
 
     <div class="carousel">
         <div class="slides">
-            <img src="/loja/loja/imagem/1.jpeg" alt="Imagem 1">
-            <img src="/loja/loja/imagem/2.jpeg" alt="Imagem 2">
-            <img src="/loja/loja/imagem/8.jpeg" alt="Imagem 3">
-            <img src="/loja/loja/imagem/11.jpeg" alt="">
-            <img src="/loja/loja/imagem/b3.jpeg" alt="">
-            <img src="/loja/loja/imagem/b5.jpeg" alt="">
-            <img src="/loja/loja/imagem/b13.jpeg" alt="">
-            <img src="/loja/loja/imagem/c1.jpeg" alt="">
-            <img src="/loja/loja/imagem/c2.jpeg" alt="">
-            <img src="/loja/loja/imagem/cal18.jpeg" alt="">
-            <img src="/loja/loja/imagem/cal19.jpeg" alt="">
-            <img src="/loja/loja/imagem/cami1.jpeg" alt="">
-            <img src="/loja/loja/imagem/cami13.jpeg" alt="">
-            <img src="/loja/loja/imagem/s1.jpeg" alt="">
-            <img src="/loja/loja/imagem/s10.jpeg" alt="">
-            <img src="/loja/loja/imagem/v15.jpeg" alt="">
-            <img src="/loja/loja/imagem/v10.jpeg" alt="">
+            
+            <img src="/loja/static/images/1.jpeg" alt="">
+            <img src="/loja/static/images/2.jpeg" alt="">
+            <img src="/loja/static/images/8.jpeg" alt="">
+            <img src="/loja/static/images/11.jpeg" alt="">
+            <img src="/loja/static/images/b3.jpeg" alt="">
+            <img src="/loja/static/images/b5.jpeg" alt="">
+            <img src="/loja/static/images/b13.jpegg" alt="">
+            <img src="/loja/static/images/c1.jpeg" alt="">
+            <img src="/loja/static/images/c2.jpeg" alt="">
+            <img src="/loja/static/images/cal18.jpeg" alt="">
+            <img src="/loja/static/images/cal19.jpeg" alt="">
+            <img src="/loja/static/images/cami1.jpeg" alt="">
+            <img src="/loja/static/images/cami13.jpeg" alt="">
+            <img src="/loja/static/images/s1.jpeg" alt="">
+            <img src="/loja/static/images/s10.jpeg" alt="">
+            <img src="/loja/static/images/v15.jpeg" alt="">
+            <img src="/loja/static/images/v10.jpgg" alt="">
             
             <!-- Adicione mais imagens aqui conforme necessário -->
         </div>     
@@ -138,29 +141,29 @@
     <h2 class="centered" id="Moda Feminina">Moda Feminina</h2>
     <section class="fashion">
         <div class="item" id="Produto 1">
-            <img src="/loja/loja/imagem/bl7.jpg" alt="Short jeans feminino cintura alta">
+            <img src="/loja/static/images/bl7.jpg" alt="Short jeans feminino cintura alta">
             <p>Blusa  Xadrez</p>
             <p>Valor: $XX.XX</p>
-            <button onclick="adicionarAoCarrinho('/loja/loja/imagem/bl7.jpg', 'Blusa  Xadrez')">Colocar no Carrinho</button>
+            <button onclick="adicionarAoCarrinho('/loja/static/images/bl7.jpg', 'Blusa  Xadrez')">Colocar no Carrinho</button>
         </div>
 
         <div class="item" id="Produto 2">
-            <img src="/loja/loja/imagem/v4.jpeg" alt="Vestido elegante laranja">
+            <img src="/loja/static/images/v10.jpg" alt="Vestido elegante laranja">
             <p>Vestido elegante laranja</p>
             <p>Valor: $XX.XX</p>
-            <button onclick="adicionarAoCarrinho('/loja/loja/imagem/v4.jpeg','Vestido elegante laranja')">Colocar no Carrinho</button>
+            <button onclick="adicionarAoCarrinho('/loja/static/images/v10.jpg','Vestido elegante laranja')">Colocar no Carrinho</button>
         </div>
         <div class="item" id="Produto 3 ">
-            <img src="/loja/loja/imagem/c12.jpeg" alt=" calça jeans wide leg com borboletas cor caqui ">
+            <img src="/loja/static/images/c12.jpeg" alt=" calça jeans wide leg com borboletas cor caqui ">
             <p>calça jeans wide leg com borboletas cor caqui</p>
             <p>Valor: $XX.XX</p>
-            <button onclick="adicionarAoCarrinho('/loja/loja/imagem/c12.jpeg', 'calça jeans wide leg com borboletas cor caqui')">Colocar no Carrinho</button>
+            <button onclick="adicionarAoCarrinho('/loja/static/images/c12.jpeg', 'calça jeans wide leg com borboletas cor caqui')">Colocar no Carrinho</button>
         </div>
         <div class="item" id="Produto 4">
-            <img src="/loja/loja/imagem/v15.jpeg" alt="vestido longo azul">
+            <img src="/loja/static/images/bl3.jpg" alt="vestido longo azul">
             <p>vestido longo azul</p>
             <p>Valor: $XX.XX</p>
-            <button onclick="adicionarAoCarrinho('/loja/loja/imagem/v15.jpeg', 'vestido longo azul ')">Colocar no Carrinho</button>
+            <button onclick="adicionarAoCarrinho('/loja/static/images/bl3.jpg', 'vestido longo azul ')">Colocar no Carrinho</button>
         </div>
         
         <!-- Adicione mais itens conforme necessário -->
@@ -175,28 +178,28 @@
         <section class="homen">
             
             <div class="itens" id="Produto 1">
-                <img src="/loja/loja/imagem/b12.jpeg" alt="Bermuda beige">
+                <img src="/loja/static/images/b12.jpeg" alt="Bermuda beige">
                 <p>Bermuda beige</p>
                 <p>Valor: $XX.XX</p>
-                <button onclick="adicionarAoCarrinho('/loja/loja/imagem/b12.jpeg', 'Bermuda beige')">Colocar no Carrinho</button>
+                <button onclick="adicionarAoCarrinho('/loja/static/images/b12.jpeg', 'Bermuda beige')">Colocar no Carrinho</button>
             </div>
             <div class="itens" id="Produto 2">
-                <img src="/loja/loja/imagem/cal19.jpeg" alt="calça alfataria azul">
+                <img src="/loja/static/images/cal19.jpeg" alt="calça alfataria azul">
                 <p>Calça alfataria azul</p>
                 <p>Valor: $XX.XX</p>
-                <button onclick="adicionarAoCarrinho('/loja/loja/imagem/cal19.jpeg' , 'calça alfataria azul')">Colocar no Carrinho</button>
+                <button onclick="adicionarAoCarrinho('/loja/static/images/cal19.jpeg' , 'calça alfataria azul')">Colocar no Carrinho</button>
             </div>
             <div class="itens" id="Produto 3">
-                <img src="/loja/loja/imagem/s8.jpeg" alt="Tênis nike Branco ">
+                <img src="/loja/static/images/s8.jpeg" alt="Tênis nike Branco ">
                 <p>Tênis nike Branco</p>
                 <p>Valor: $XX.XX</p>
-                <button onclick="adicionarAoCarrinho('/loja/loja/imagem/s8.jpeg' , 'Tênis nike Branco')">Colocar no Carrinho</button>
+                <button onclick="adicionarAoCarrinho('/loja/static/images/s8.jpeg' , 'Tênis nike Branco')">Colocar no Carrinho</button>
             </div>
             <div class="itens" id="Produto 4">
-                <img src="/loja/loja/imagem/cami7.jpeg" alt="Produto 4">
+                <img src="/loja/static/images/cami7.jpeg" alt="Produto 4">
                 <P>Blusa longa marrom</P>
                 <p>Valor: $XX.XX</p>
-                <button onclick="adicionarAoCarrinho('/loja/loja/imagem/cami7.jpeg' , 'Blusa longa marrom')">Colocar no Carrinho</button>
+                <button onclick="adicionarAoCarrinho('/loja/static/images/cami7.jpeg' , 'Blusa longa marrom')">Colocar no Carrinho</button>
             </div>
            
             <!-- Adicione mais itens conforme necessário -->
@@ -251,8 +254,8 @@
 
 
 
-
-    <script src="javascripts.js"></script>
+<script src="{% static 'javascripts.js' %}"></script>
+    
 
 </body>
 </html>
