@@ -6,6 +6,11 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
+from django.shortcuts import render
+
+def bermudafeminina(request):
+    return render(request, 'bermudafeminina.html')
+
 
 @login_required
 def adicionar_ao_carrinho(request, produto_id):
